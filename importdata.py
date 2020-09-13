@@ -15,7 +15,7 @@ total = 0
 for path, subdirs, files in os.walk(root):
     for name in files:
         if fnmatch(name, pattern):
-        	if (total >= 0):
+        	if (total >= 0): # Solo usar para test de pocos datoss
         		filedata = os.path.join(path, name)
         		with open(filedata, 'r', newline='') as csvfilereader:
         			dr = csv.DictReader(csvfilereader)
