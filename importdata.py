@@ -11,7 +11,6 @@ with open(filecsv, 'w', newline='') as csvfile:
 	dw = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 	dw.writerow(['State', 'Salary'])
 
-
 total = 0
 for path, subdirs, files in os.walk(root):
     for name in files:
